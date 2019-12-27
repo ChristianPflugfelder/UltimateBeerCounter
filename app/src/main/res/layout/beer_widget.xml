@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_round_corners"
+    android:theme="@android:style/ThemeOverlay.Material.Dark">
+
+
+    <TextView
+        android:id="@+id/tv_beer_count"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/crap"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/beer_widget_accent" />
+
+    <LinearLayout
+        android:id="@+id/crap"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_margin="10dp"
+            android:id="@+id/btn_new_beer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_beer" />
+    </LinearLayout>
+</RelativeLayout>
